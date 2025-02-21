@@ -1,0 +1,16 @@
+body{
+    background-color:#887972
+}
+h1{
+    color:#FEFAED;
+    font-family:  'Playfair Display', serif;
+    font-size: 50px;
+
+}
+h2,p{
+   color:#FEFAED;
+   font-family:  'Playfair Display', serif;
+}
+.items{
+    justify-content: center;
+}
