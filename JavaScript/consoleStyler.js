@@ -1,9 +1,8 @@
 // Task 1: Build a function-based console log message generator
 function consoleStyler(color,background,fontSize,txt) {
-    var message="%c"+txt;
-    var style;
+     message="%c"+txt;
     style=`color:${color};`;
-    style+=`background:${background}`;
+    style+=`background:${background};`;
     style+=`font-size: ${fontSize};`;
     console.log(message,style);
     
@@ -25,10 +24,10 @@ function celebrateStyler(reason) {
 
 // Task 3: Run both the consoleStyler and the celebrateStyler functions
 
-consoleStyler(`'#1d5c63'`, `'#ede6db'`,`'40px'`,`'Congrats!'`);
+consoleStyler('#1d5c63', '#ede6db','40px','Congrats!');
 celebrateStyler(`'birthday'`);
 // Task 4: Insert a congratulatory and custom message
-function styleAndCelebrate() {
+function styleAndCelebrate(color,background,fontSize,txt,reason) {
      consoleStyler(color, background, fontSize, txt);  
     celebrateStyler(reason);
     
