@@ -5,17 +5,16 @@
             body { 
 display: grid; 
 height: 200px; 
+grid-template-rows: 30px 1fr 30px; 
 grid-template-areas: "head head" 
                      "nav  main" 
                      "footer  footer"; 
-grid-template-rows: 30px 1fr 30px; 
-grid-template-columns: 150px 1fr; 
 } 
 header { 
 grid-area: head; 
 background-color: lightsalmon; 
 }
-.nav-bar { 
+nav{ 
 grid-area: nav; 
 background-color: lightblue; 
 
@@ -33,7 +32,7 @@ background-color: firebrick;
     <body> 
     
         <header> Header </header> 
-        <nav class="nav-bar"> Navigation </nav> 
+        <nav > Navigation </nav> 
         <main> Main area </main> 
         <footer> Footer </footer> 
     

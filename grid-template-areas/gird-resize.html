@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{
+        display: grid;
+        grid-template-areas: "header header header"
+                              "sidebar content sidebar2"
+                              " footer footer footer";
+                              grid-template-rows:30px 80px 30px ;
+    }
+    
+    header{
+        grid-area: header;
+        background-color: black;
+        color: aliceblue;
+    }
+    .sidebar{
+        grid-area: sidebar;
+        background-color:rgba(8, 169, 159, 0.696);
+        color: black;
+    }
+    .sidebar2{
+        grid-area: sidebar2;
+        background-color:rgba(8, 169, 159, 0.696);
+        color: black;
+    }
+    .content{
+        grid-area: content;
+        color: black;
+    }
+    footer{
+        grid-area: footer;
+        background-color: black;
+        color: aliceblue;
+    }
+    .text{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width:600px) {
+       body{
+        display:grid;
+       grid-template-areas:
+        "header"
+        "sidebar"
+        " content"
+        " sidebar2"
+        " footer " ; 
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto 1fr auto auto;        }
+
+        
+    }
+</style>
+</head>
+<body>
+    <header class="text">Header</header>
+    <div class="sidebar   text"></div>
+     <div class="content  text">Content</div>
+     <div class="sidebar  text">Sidebar</div>
+     <div class="sidebar2 text">Sidebar2</div>
+     <footer class="text">Footer</footer>
+</body>
+</html>
