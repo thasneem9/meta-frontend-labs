@@ -1,0 +1,36 @@
+ /* Flex container */
+ .flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: beige;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* Flex items (boxes) */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: violet;
+}
+
+/* Different flex behaviors */
+.A {
+    background-color: #ff6666;
+    flex: 1 1 auto; /* Normal flex behavior */
+}
+
+.B {
+    background-color: #66b3ff;
+    flex: 2 1 auto; /* Grows twice as much as box1 */
+}
+
+.C {
+    background-color: #66ff99;
+    flex: 1 2 auto; /* Shrinks twice as fast as others */
+}

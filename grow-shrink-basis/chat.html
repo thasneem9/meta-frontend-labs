@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Shrink: Chat App</title>
+    <style>
+        .chat-container {
+            display: flex;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        .contacts {
+            background-color: lightblue;
+            flex: 1 2 200px; /* Shrinks faster */
+        }
+
+        .chat-window {
+            background-color: lightgreen;
+            flex: 2 1 500px; /* Shrinks slower */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="contacts">Contacts</div>
+        <div class="chat-window">Chat Window</div>
+    </div>
+
+</body>
+</html>

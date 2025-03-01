@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Basis: Pricing Cards</title>
+    <style>
+        .pricing-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 200px; /* Each starts at 200px */
+        }
+
+        .premium {
+            flex: 2 1 300px; /* Takes twice the space, starts at 300px */
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pricing-container">
+        <div class="card">Basic Plan</div>
+        <div class="card">Standard Plan</div>
+        <div class="card premium">Premium Plan</div>
+    </div>
+
+</body>
+</html>

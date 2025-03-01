@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Grow: Navbar</title>
+    <style>
+        .navbar {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+            color: white;
+        }
+
+        .logo {
+            background-color: red;
+            padding: 10px;
+            flex: 0 0 auto; /* No growth, No shrink */
+        }
+
+        .nav-items {
+            display: flex;
+            flex: 1 1 auto; /* Grows to take remaining space */
+            justify-content: space-around;
+        }
+
+        .nav-items div {
+            background-color: blue;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">LOGO</div>
+        <div class="nav-items">
+            <div>Home</div>
+            <div>About</div>
+            <div>Services</div>
+            <div>Contact</div>
+        </div>
+    </div>
+
+</body>
+</html>
