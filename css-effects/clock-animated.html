@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .clock{
+            display: flex;
+            background-color: antiquewhite;
+            flex-direction: row;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+
+            position: relative; /* Allows absolute positioning inside */
+      
+         }
+       
+         .minutes{
+            width:10px;
+            height: 199px;
+            background-color: blueviolet;
+            align-self: flex-end;
+    
+            position: absolute;
+            left: 50%; /* move to the center from lefttt and from bottomm */
+            bottom: 50%;
+            transform: translateX(-50%); /* optional */
+
+            transform-origin: 50% 100%; /* to tell keframe where to begin */
+            animation: rotateMinute 60s linear infinite;
+           
+         }
+         .hours{
+            width:200px;
+            height: 10px;
+            background-color: palegreen;
+            align-self: center;
+            margin-left: auto;
+
+            left: 50%;
+            bottom: 50%;
+            transform: translateY(50%);
+
+            animation: rotateHour 720s linear infinite;
+            transform-origin: 0% 50%;
+         }
+       
+
+
+         @keyframes rotateMinute {
+         from { transform: translateX(-50%) rotate(0deg); }
+         to { transform: translateX(-50%) rotate(360deg); }
+}
+        @keyframes rotateHour {
+         from { transform: translateY(50%) rotate(0deg); }
+         to { transform: translateY(50%) rotate(360deg); }
+}       
+
+        
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="minutes hands"></div>
+        <div class="hours hands"></div>
+    </div>
+    
+</body>
+</html>
