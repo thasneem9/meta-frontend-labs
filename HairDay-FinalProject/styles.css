@@ -150,7 +150,7 @@ nav a:hover::after {
 .column-1 p{
     font-family: "Noyh R W01 SemiLight";
     font-size: 30px;
-    color:#655d34
+    color:#524b2a
 }
 .column-1 button{
     background-color: #b10000;
@@ -162,28 +162,135 @@ nav a:hover::after {
     margin: 30px 10px 0px 0px;;
 
 }
-.model{
-    border: 5px solid white;
-    width: 400px;
-    height: 500px;
- 
-
-  position: absolute;
-  z-index: 2;
-  left: 58%;
-  top: 40%;
-
-  opacity: 0.87;
-    
+.column-1 button:hover{
+    background-color: #b10000ab;
 }
+
+
+.model {
+    border: 10px solid white;
+    width: 380.55px;
+    height: 462.65px;
+    position: absolute;
+    z-index: 2;
+    left: 58%;
+    top: 40%;
+
+    opacity: 0;
+    transform: translateX(50px); 
+    animation: fadeInSlide 1.5s ease-out forwards;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateX(50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
 .gray-space{
     width:100%;
     height:100px;
     background-color: #faefed;
 }
 
-/* ---------------------------MEDIA QUERIES------------------------------------------- */
+/* --------------------------AS-SEENIN--------------------------------------------- */
+.as-seen-in{
+    display: flex;
+    background-color: #fff;
+    gap:10px;
+    justify-content: center;
+    
+}
+.as-seen-in img{
+    width: 200px;
+}
+h3{
+    color:#d31245;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+  
+}
 
+
+
+
+
+/* --------------------------BOOKING APPOINTMENT------------------------------------------- */
+.booking{
+    display: flex;
+    flex-direction: row;
+
+    margin-top:100px;
+    background-color:#f0f0f2;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.booking img{
+    width:50%;
+    height: 50%;
+    animation: fadeInSlide 1.5s ease-out forwards;
+ 
+}
+.form{
+    height: 50%;
+    width:100%;
+}
+.booking h4{
+    color: rgb(97, 97, 97);
+    font-size: 30px;
+    padding: 10px;
+    margin:10px;
+
+}
+.booking p{
+    padding: 10px;
+    margin:10px;
+   
+}
+
+.input{
+    background-color: #fefeff;
+    display: inline;
+    border:1px solid #323232;
+    border-radius: 5px;
+
+    width:330px;
+   height:40px;
+
+   margin: 10px 0px 20px 30px;
+   padding-left: 10px;
+
+}
+
+.input-button{
+    background-color: #fd1c79;
+    color: white;
+    display: inline;
+    border:none;
+    border-radius: 5px;
+
+    width:25%;
+   height:40px;
+
+   float: right;
+   padding-left: 10px;
+   margin: 0px 20px 20px 0px;
+}
+
+.input-button:hover{
+    background-color: #fd1c7aa4;
+
+}
+/* ---------------------------MEDIA QUERIES------------------------------------------- */
 
 @font-face {
     font-family: "Trend HM Sans W00 One";
