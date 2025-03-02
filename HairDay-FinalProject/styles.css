@@ -290,6 +290,108 @@ h3{
     background-color: #fd1c7aa4;
 
 }
+
+/* ----------------------------MEET OUR TEAM----------------------------------------------------- */
+
+.our-team{
+    background-color:#ffddd39e;
+    display: flex;
+    justify-content:center;
+  
+    gap:2%;
+ 
+}
+#meet-our-team{
+    width:100%;
+    background-color:#ffddd39e;
+    color:#a67072;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:30px;
+ 
+}
+
+
+.our-team img{
+    height:400px;
+    width:310px;
+    border-radius: 10px;
+   
+}
+.stylist-card{
+    background-color: #faf2ec;
+    width:310px;
+    margin:0px;
+    margin-bottom:50px;
+    text-align: center;
+    margin-top:10px;
+    border-radius: 10px;
+    animation: fadeInSlide 1.5s ease-out forwards;
+    padding: 20px;
+}
+.stylist-card:hover{
+    opacity: 80%;
+}
+#stylist-name{
+    font-weight: bold;
+    font-size: 50px;
+    margin:10px;
+    padding:10px;
+}
+
+/* -----------------------------FOOTER DETAILS------------------------------------------------- */
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #ffddd3;
+    gap:20%;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    text-justify: center;
+}
+.col-1{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    padding: 30px;
+
+}
+.col-2{
+    display:flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+}
+.item{
+    padding:5px;
+}
+.location, .mail, .phone, .timing{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+footer #hair-day-logo{
+    width:140px;
+    height:150px;
+}
+.col-2 img{
+    width:20px;
+    height:20px;
+
+}
+.footer-copyright{
+    background-color: #ffddd3;
+ 
+    padding-bottom:20px;
+ 
+
+}
+
+
 /* ---------------------------MEDIA QUERIES------------------------------------------- */
 
 @font-face {
