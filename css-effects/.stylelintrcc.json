@@ -1,4 +1,4 @@
-{ 
+/* { 
 "rules": { 
 
         "alpha-value-notation": "number", 
@@ -6,4 +6,5 @@
         "color-no-hex": true 
 } 
 
-} 
+}  
+.stylelintrc.json rename to that tomakethis work*/

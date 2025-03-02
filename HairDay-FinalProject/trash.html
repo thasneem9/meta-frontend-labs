@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Images</title>
+    <style>
+        .image-container {
+            position: relative; /* This makes it the reference for absolute positioning */
+            width: 300px; /* Adjust width as needed */
+            height: 300px; /* Adjust height as needed */
+        }
+
+        .background-image {
+            width: 10%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the area */
+        }
+
+        .overlay-image {
+            position: absolute;
+            top: 50%; /* Adjusts position */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centers the image */
+            width: 150px; /* Adjust overlay image size */
+            height: 150px;
+            opacity: 0.8; /* Makes it slightly transparent */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="./hairModel.png">
+        <img src="./flowerLeft.png" class="background-image" alt="Background Image">
+    </div>
+
+</body>
+</html>
