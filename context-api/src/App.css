@@ -33,3 +33,11 @@
     transition: color 0.3s ease-in-out;
   }
   
+
+  html[lang="en"] {
+    font-family: Arial, sans-serif;
+  }
+  
+  html[lang="fr"] {
+    font-family: "Comic Sans MS", cursive;
+  }
