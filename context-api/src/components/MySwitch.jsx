@@ -7,7 +7,7 @@ function MySwitch() {
     <>
     click to chnage theme
     <input type="checkbox" 
-    checked={theme==="light"}
+    checked={theme}
     onChange={toggleTheme}
     />
     </>

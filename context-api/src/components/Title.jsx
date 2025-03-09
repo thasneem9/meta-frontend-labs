@@ -3,10 +3,12 @@ import { useTheme } from '../../context/ThemeContext'
 
 function Title() {
 
-    const theme=useTheme();
+    const {theme}=useTheme();
   return (
-    <div style={{color:theme==="light"?"black":"white"}}
-    >Title</div>
+    <div >
+      <h2>THIS PATICLAR STUF WIL CHANGE ON SWITCH THEME</h2>
+     <button></button>
+      </div>
   )
 }
 
